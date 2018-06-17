@@ -1,0 +1,218 @@
+﻿@font-face {
+    font-family: "MilkShake";
+    src: url("../fonts/Milkshake.ttf") format('truetype');
+    src: url("../fonts/Milkshake.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "THIS";
+    src : url("../fonts/This-Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.jumbotron {
+    background-image: url("../photos/Bergen_Sandviken,_Norway_at_night.jpg");
+    background-repeat: no-repeat;
+
+    -webkit-filter: grayscale(30%);
+    background-size: 100% 100%;
+    padding-bottom: 0px;
+}
+    .jumbotron img {
+        opacity: 0.7;
+        transition: all 0.3s ease;
+    }
+    .jumbotron img:hover {
+        opacity: 1;
+        transform: scaleY(1.1) scaleX(1.1);
+    }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .center{
+        width: 100%;
+    }
+   
+}
+
+
+.push-to-bottom {
+    position: relative;
+    bottom: 0;
+
+    
+}
+.jumbotron > container {
+    position: absolute;
+    border: none;
+    background-color: green;
+    
+    
+}
+container2{
+
+}
+.container1 {
+    width: 80%;
+    background: rgba(139, 0, 0, 0.4);
+    text-align: center;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 20px;
+    
+}
+    .container1:hover {
+        
+    }
+
+
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+}
+.navbar-default {
+    border: none;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0);
+}
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+    letter-spacing: 3px;
+    background-color: black;
+    font-family: MilkShake;
+    font-style: normal;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+@media (max-width: 767px) {
+    .navbar-nav li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    }
+
+
+
+    .navbar-nav li:hover {
+        background-color: darkred;
+    }
+
+
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font: "MilkShake";
+    }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color: white;
+        }
+
+    footer {
+        background-image: url("../photos/dobre.jpg");
+        -webkit-filter: grayscale(40%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+        footer > h2 {
+            font-family: MilkShake;
+            font-size: 20px;
+           padding-bottom: 0.5%;
+           padding-top: 0.5%;
+            background: rgba(255, 255, 255, 0.4);
+            align-content: center;
+            text-align: center;
+            width: 80%;
+            transition: all 0.3s ease;
+        }
+
+            footer > h2 a {
+                color: inherit;
+            }
+
+            footer > h2:hover {
+                background-color: darkred;
+                color: white;
+                transform: scaleY(1.2);
+            }
+
+            footer > h2 img {
+                width: 5%;
+                height: 100%;
+               
+                transition: all 0.3s ease;
+            }
+
+                footer > h2 img:hover {
+                }
+
+        footer > h1 img {
+            width: 50%;
+            opacity: 0.4;
+        }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .row h1 {
+        color: white;
+        font: icon;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+        .row h1 img {
+            width: 10%;
+            height: 20%;
+        }
+
+    .container5 {
+        width: 30%;
+        position: absolute;
+        display: inline-block;
+    }
+
+        .container5 img {
+            width: 20%;
+        }
+
+    .container6 {
+        width: 30%;
+        list-style: none;
+        display: inline-block;
+    }
+
+        .container6 h1 img {
+            width: 10%;
+            height: 20%;
+        }
+
+    .container7 {
+        display: inline-block;
+        width: 100%;
+    }
