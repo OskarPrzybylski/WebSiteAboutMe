@@ -26,6 +26,8 @@ namespace WebSiteAboutMe
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/EditedStyles.css"));
+            bundles.Add(new ScriptBundle("~/bundles/unobtrusive").Include(
+                "~/Scripts/jquery.unobtrusive-ajax.js"));
         }
     }
 }

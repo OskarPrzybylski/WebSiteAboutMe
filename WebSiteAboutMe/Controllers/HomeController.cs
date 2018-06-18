@@ -26,5 +26,14 @@ namespace WebSiteAboutMe.Controllers
 
             return View();
         }
+
+        public PartialViewResult AboutMe()
+        {
+            return PartialView();
+        }
+        public PartialViewResult AboutProjects()
+        {
+            return PartialView();
+        }
     }
 }

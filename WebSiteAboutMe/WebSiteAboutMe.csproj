@@ -207,6 +207,8 @@
     <Content Include="photos\emailblack.png" />
     <Content Include="photos\facebook.png" />
     <Content Include="photos\facebookblack.png" />
+    <Content Include="photos\favicon-16x16.png" />
+    <Content Include="photos\favicon-32x32.png" />
     <Content Include="photos\Foote.jpg" />
     <Content Include="photos\Footer-Background.jpg" />
     <Content Include="photos\footer.jpg" />
@@ -244,6 +246,8 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -263,6 +267,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Home\AboutProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

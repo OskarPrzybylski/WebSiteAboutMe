@@ -1,33 +1,49 @@
-﻿
+﻿@{
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        UpdateTargetId = "tableBody",
+        Url = Url.Action("AboutMe")
+    };
+}
 
 <div class="jumbotron">
 
-    
-        <img src="~/photos/newlogo.png" class="center" />
-    
-  
-    
-        <div class="container1 center">
-          
-                <h1 style="font-family: 'MilkShake' ;font-style: normal; color: white; opacity: 1;">Velkommen til nettsida mi!</h1>
-            </div>
-           
-    
-   
-    
-  
-   <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.2); width: 100%; margin-top: 0; "> 
-       <nav class="navbar navbar-default push-to-bottom">
-           <div class="container-fluid">
-               <ul class="nav navbar-nav">
-                   <li><a href="#" >o mnie</a></li>
-                   <li><a href="#">projekty</a></li>
-               </ul>
-           </div>
-           
-    </nav>
-</div>
-</div>
-   
 
-   
+    <img src="~/photos/newlogo.png" class="center" />
+
+
+
+    <div class="container1 center">
+
+        <h1 style="font-family: 'MilkShake' ;font-style: normal; color: white; opacity: 1;">Velkommen til nettsida mi!</h1>
+    </div>
+
+
+
+
+
+    <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.2); width: 100%; margin-top: 0; ">
+        <nav class="navbar navbar-default push-to-bottom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li>
+                        @Ajax.ActionLink("o mnie ", "AboutMe", "Home",
+                    new AjaxOptions() { UpdateTargetId = "hehs" })
+                                    </li>
+                    <li>
+                        @Ajax.ActionLink("projekty", "AboutProjects", "Home",
+                   new AjaxOptions() { UpdateTargetId = "hehs" })
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+<div id="hehs"></div>
+
+
+
+
+
+

@@ -5,16 +5,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title — moja aplikacja platformy ASP.NET</title>
+    <link rel="icon" type="image/png" href="~/photos/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="~/photos/favicon-16x16.png" sizes="16x16" />
+    <title>Oskar Przybylski - Website about me!</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    
+
     <div class="body-content">
         @RenderBody()
         <hr />
-        
+
         <footer>
 
 
@@ -28,10 +30,12 @@
             <h2 class="center" style="background: rgba(0, 0, 0, 0.4); color: white; width: 100%;">Strona stworzona przez Oskara Przybylskiego</h2>
 
         </footer>
-</div>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/unobtrusive")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>
