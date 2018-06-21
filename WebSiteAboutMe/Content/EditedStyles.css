@@ -11,21 +11,36 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: "AGENCY";
+    src : url("../fonts/agency-fb_[allfont.net].ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "impact";
+    src: url("../fonts/impact_[pl.allfont.net].ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .jumbotron {
     background-image: url("../photos/Bergen_Sandviken,_Norway_at_night.jpg");
     background-repeat: no-repeat;
-
     -webkit-filter: grayscale(30%);
     background-size: 100% 100%;
+    
+   
     padding-bottom: 0px;
 }
     .jumbotron img {
         opacity: 0.7;
+      
         transition: all 0.3s ease;
+        margin-bottom: 0;
     }
     .jumbotron img:hover {
         opacity: 1;
-        transform: scaleY(1.1) scaleX(1.1);
+      
     }
 
 .center {
@@ -59,17 +74,24 @@ container2{
 
 }
 .container1 {
-    width: 80%;
+    width: 100%;
     background: rgba(139, 0, 0, 0.4);
     text-align: center;
-    margin-bottom: 2%;
+    margin: 0;
+   
     padding-bottom: 1%;
     padding-top: 1%;
-    border-radius: 20px;
+  
+
+ 
     
 }
-    .container1:hover {
-        
+
+    .container1 h1 {
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        color: white;
+        opacity: 1;
     }
 
 
@@ -77,15 +99,20 @@ container2{
 .navbar-nav {
     width: 100%;
     text-align: center;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.0);
     border: none;
     border-radius: 0px;
     margin: 0;
 }
 .navbar-default {
     border: none;
+    background: rgba(255, 255, 255, 0.0);
     border-radius: 0px;
-    background: rgba(255, 255, 255, 0);
+    background-color: none;
+}
+.buttonclicked {
+    background: rgba(139, 0, 0, 0.4);
+   
 }
 .navbar-nav li {
     float: none;
@@ -94,8 +121,8 @@ container2{
     padding-right: 5%;
     margin-top: 1%;
     letter-spacing: 3px;
-    background-color: black;
-    font-family: MilkShake;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     font-style: normal;
     font-size: 30px;
     transition: all 0.3s ease;
@@ -104,20 +131,34 @@ container2{
     .navbar-nav li {
         padding-left: 0;
         padding-right: 0;
+        font-size: 20px;
+
     }
+    .container1{
+        margin-bottom: 10%;
+    }
+    
+  
     }
 
 
 
-    .navbar-nav li:hover {
-        background-color: darkred;
-    }
-    .navbar-nav li:active{
-        background-color: darkred;
-    }
-    .navbar-nav li:focus{
-        background-color: darkred;
-    }
+
+.navbar-nav li:hover {
+    background: rgba(139, 0, 0, 0.4);
+    color: white;
+}
+
+.navbar-nav li:active {
+    background: rgba(139, 0, 0, 0.4);
+    color: white;
+}
+
+.navbar-nav li:focus {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
 
 
     .navbar-default .navbar-nav > li > a {
@@ -128,42 +169,74 @@ container2{
         .navbar-default .navbar-nav > li > a:hover {
             color: white;
         }
-
-    footer {
-        background-image: url("../photos/dobre.jpg");
-        -webkit-filter: grayscale(40%);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-        footer > h2 {
-            font-family: MilkShake;
-            font-size: 20px;
-           padding-bottom: 0.5%;
-           padding-top: 0.5%;
-            background: rgba(255, 255, 255, 0.4);
-            align-content: center;
-            text-align: center;
-            width: 80%;
-            transition: all 0.3s ease;
+        .navbar-default .navbar-nav > li > a:active {
+            color: white;
+      
         }
+        .navbar-default .navbar-nav > li > a:focus {
+            color: white;
+           
+        }
+
+
+footer {
+    background-image: url("../photos/dobre.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 0.5%;
+    margin-bottom: 0;
+}
+
+    footer > h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        padding-bottom: 2%;
+        text-transform: uppercase;
+        padding-top: 2%;
+        background: rgba(139, 0, 0, 0.4);
+        align-content: center;
+        text-align: center;
+        color: white;
+        width: 28%;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease;
+        padding: 0;
+       
+    }
+    footer > h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
 
             footer > h2 a {
                 color: inherit;
+
+            }
+            footer > h2 a:hover{
+                color: black;
             }
 
-            footer > h2:hover {
-                background-color: darkred;
-                color: white;
-                transform: scaleY(1.2);
-            }
+    footer > h2:hover {
+        background: rgba(255, 255, 255, 0.4);
+        color: white;
+        transform: scale(1.1);
+    }
 
-            footer > h2 img {
-                width: 5%;
-                height: 100%;
-               
-                transition: all 0.3s ease;
-            }
+    footer > h2 img {
+        width: 10%;
+        height: 100%;
+        padding-bottom: 2%;
+        max-height: 150px;
+        max-width: 100px;
+        padding-top: 2%;
+        transition: all 0.3s ease;
+    }
 
                 footer > h2 img:hover {
                 }
@@ -222,3 +295,72 @@ container2{
         display: inline-block;
         width: 100%;
     }
+   
+.articlecontainer {
+    width: 50%;
+   
+ 
+}
+
+.articleimage {
+    float: left;
+    width: 40%;
+  
+    margin-right: 5%;
+    
+}
+    .articleimage h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 2%;
+    }
+.articleimage img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 0;
+}
+.articletext {
+    float: none;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+@media (max-width: 767px) {
+    .articletext{
+        font-size: 15px;
+    }
+    .articlecontainer{
+        width: 80%;
+    }
+    .articleimage{
+        width: 50%;
+        margin-right: 2%;
+    }
+    .articleimage h1{
+        font-size: 10px;
+    }
+    footer > h2{
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+}
+@media screen and (min-width: 3500px) {
+    .articleimage img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .articletext{
+        font-size: 40px;
+    }
+    }
+
+   

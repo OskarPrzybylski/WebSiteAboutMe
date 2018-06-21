@@ -8,31 +8,34 @@
 
 <div class="jumbotron">
 
-
-    <img src="~/photos/newlogo.png" class="center" />
+   
+    <img src="~/photos/newlogo.png" class="center"  />
 
 
 
     <div class="container1 center">
 
-        <h1 style="font-family: 'MilkShake' ;font-style: normal; color: white; opacity: 1;">Velkommen til nettsida mi!</h1>
+        <h1>Velkommen til nettsida mi!</h1>
     </div>
 
 
 
 
 
-    <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.2); width: 100%; margin-top: 0; ">
+    <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.0); width: 100%; margin-top: 0; ">
         <nav class="navbar navbar-default push-to-bottom">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li>
+                    <li id="li1">
                         @Ajax.ActionLink("o mnie ", "AboutMe", "Home",
-                    new AjaxOptions() { UpdateTargetId = "hehs" })
+                    new AjaxOptions() { UpdateTargetId = "article",
+                    OnSuccess="animate"})
                                     </li>
-                    <li>
+
+                    <li id="li2">
                         @Ajax.ActionLink("projekty", "AboutProjects", "Home",
-                   new AjaxOptions() { UpdateTargetId = "hehs" })
+                   new AjaxOptions() { UpdateTargetId = "article2",
+                   OnSuccess="animate1"})
                     </li>
                 </ul>
             </div>
@@ -40,7 +43,34 @@
         </nav>
     </div>
 </div>
-<div id="hehs"></div>
+<div class="articlecontainer center" id="article" style="display: none;"></div>
+<div class="articlecontainer center" id="article2" style="display: none;"></div>
+
+
+
+
+
+    <div class="articlecontainer center" id="article1">
+        <div class="articleimage">
+            <img src="~/photos/oski.jpg" />
+            <h1>Author: Mariusz Szczepaniak</h1>
+        </div>
+        <div class="articletext">
+
+            Cześć! Nazywam się Oskar. Witaj na mojej stronie. Została ona przeze mnie
+            zaprojektowana i utworzona z dwóch powodów. W pierwszej kolejności chciałem
+            posiadać swoje miejsce w sieci, które będzie prezentowało mnie samego, moje zainteresowania
+            jak i moją pracę. Po drugie znajdują się tu wszelkie drogi kontaktu ze mną, które
+            mógłbyś wykorzystać. Jedną z rzeczy, które kocham w swoim życiu są rozmowy. Dlatego
+            pragnę, by kontakt ze mną był jak najłatwiejszy!
+            Kim jestem? Czym się zajmuje? Nad czym pracuję? Klikaj powyżej i przeczytaj, a następnie
+            zachęcam do kontaktu!
+
+            Dzięki za odwiedziny!
+
+        </div>
+
+    </div>
 
 
 
