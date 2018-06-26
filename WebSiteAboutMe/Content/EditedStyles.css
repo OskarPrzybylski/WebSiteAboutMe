@@ -24,12 +24,12 @@
     font-style: normal;
 }
 .jumbotron {
-    background-image: url("../photos/Bergen_Sandviken,_Norway_at_night.jpg");
+    background-image: url("../photos/tło1.jpg");
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(30%);
-    background-size: 100% 100%;
-    
-   
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-filter: grayscale(0%);
+    background-size: cover;
     padding-bottom: 0px;
 }
     .jumbotron img {
@@ -232,6 +232,7 @@ footer {
         width: 10%;
         height: 100%;
         padding-bottom: 2%;
+        -webkit-filter: invert(90%);
         max-height: 150px;
         max-width: 100px;
         padding-top: 2%;
@@ -311,7 +312,9 @@ footer {
 }
     .articleimage h1 {
         font-family: 'Oswald', sans-serif;
-        font-size: 20px;
+        font-size: 15px;
+        background: rgba(139, 0, 0, 1);
+        color: white;
         text-align: center;
         margin-top: 2%;
     }

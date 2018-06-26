@@ -1,10 +1,4 @@
-﻿@{
-    AjaxOptions ajaxOpts = new AjaxOptions
-    {
-        UpdateTargetId = "tableBody",
-        Url = Url.Action("AboutMe")
-    };
-}
+﻿
 
 <div class="jumbotron">
 
@@ -30,13 +24,16 @@
                         @Ajax.ActionLink("o mnie ", "AboutMe", "Home",
                     new AjaxOptions() { UpdateTargetId = "article",
                     OnSuccess="animate"})
-                                    </li>
+                    </li>
+
 
                     <li id="li2">
                         @Ajax.ActionLink("projekty", "AboutProjects", "Home",
                    new AjaxOptions() { UpdateTargetId = "article2",
                    OnSuccess="animate1"})
                     </li>
+                    <li>@Html.ActionLink("Mój Blog", "Index", "Blog")</li>
+
                 </ul>
             </div>
 
@@ -53,7 +50,7 @@
     <div class="articlecontainer center" id="article1">
         <div class="articleimage">
             <img src="~/photos/oski.jpg" />
-            <h1>Author: Mariusz Szczepaniak</h1>
+            <h1>Foto: Mariusz Szczepaniak</h1>
         </div>
         <div class="articletext">
 
