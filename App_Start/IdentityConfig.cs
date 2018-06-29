@@ -29,7 +29,7 @@ namespace WebSiteAboutMe
         private async Task ConfigSendGridasync(IdentityMessage message)
         {
             SmtpClient smtpClient = new SmtpClient();
-            NetworkCredential basicCredential = new NetworkCredential(); //dodac hasla
+            NetworkCredential basicCredential = new NetworkCredential("rejestracja@nordlearn.pl", "#Diookplepo1817"); //dodac hasla
             MailMessage messagee = new MailMessage();
             MailAddress fromAddress = new MailAddress("rejestracja@nordlearn.pl");
 

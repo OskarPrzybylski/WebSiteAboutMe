@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using WebSiteAboutMe.Models;
@@ -17,6 +18,8 @@ namespace WebSiteAboutMe.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+       
+       
 
         public AccountController()
         {
@@ -26,6 +29,8 @@ namespace WebSiteAboutMe.Controllers
         {
             UserManager = userManager;
             SignInManager = signInManager;
+     
+            
         }
 
         public ApplicationSignInManager SignInManager
@@ -172,7 +177,7 @@ namespace WebSiteAboutMe.Controllers
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Potwierdź konto", "Potwierdź konto, klikając <a href=\"" + callbackUrl + "\">tutaj</a>");
-
+                    UserManager.AddToRole(user.Id, "DefaultUser");
                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account",
                        new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
