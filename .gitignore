@@ -260,6 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 
-
 # Hide data source credentials
 Web.config
