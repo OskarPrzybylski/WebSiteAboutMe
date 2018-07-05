@@ -11,7 +11,6 @@ namespace WebSiteAboutMe.Controllers
     {
         public ActionResult Index()
         {
-          
             return View();
         }
 
