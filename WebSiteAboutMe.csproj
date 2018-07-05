@@ -241,35 +241,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Category.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Entry.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EntryType.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\DbContentModels.cs" />
+    <Compile Include="Models\Entry.cs" />
+    <Compile Include="Models\EntryType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\RoleAccess.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\RoleAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -314,17 +292,8 @@
     <Content Include="gif\tim.gif" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\DbModels.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-      <LastGenOutput>DbModels.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DbModels.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-      <LastGenOutput>DbModels.cs</LastGenOutput>
-    </Content>
     <Content Include="photos\Bergen_Sandviken,_Norway_at_night.jpg" />
+    <Content Include="photos\bridge-1246649_1280.jpg" />
     <Content Include="photos\cvbeztla.png" />
     <Content Include="photos\cvblack.png" />
     <Content Include="photos\dobre.jpg" />
@@ -372,13 +341,6 @@
     <Content Include="fonts\This-Regular.otf" />
     <Content Include="fonts\agency-fb_[allfont.net].ttf" />
     <Content Include="fonts\impact_[pl.allfont.net].ttf" />
-    <EntityDeploy Include="Models\DbModels.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbModels.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DbModels.edmx.diagram">
-      <DependentUpon>DbModels.edmx</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -429,6 +391,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Shared\_AccountLayout.cshtml" />
     <None Include="Web.config.example" />
     <None Include="Web.config.Debug.example">
       <DependentUpon>Web.config.example</DependentUpon>
@@ -472,9 +435,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49846</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49846/</IISUrl>
+          <IISUrl>http://localhost:51283/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

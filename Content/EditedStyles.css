@@ -183,6 +183,7 @@ footer {
     background-image: url("../photos/dobre.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
     width: 100%;
     padding-top: 0.5%;
     margin-bottom: 0;
@@ -239,8 +240,7 @@ footer {
         transition: all 0.3s ease;
     }
 
-                footer > h2 img:hover {
-                }
+               
 
         footer > h1 img {
             width: 50%;
@@ -365,5 +365,19 @@ footer {
         font-size: 40px;
     }
     }
+
+
+.informationsform{
+    width: 80%;
+}
+    .informationsform h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    }
+.allform {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
 
    

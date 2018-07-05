@@ -1,0 +1,42 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Abhaya+Libre&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Anton&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belleza&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Average&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abhaya+Libre&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="~/photos/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="~/photos/favicon-16x16.png" sizes="16x16" />
+    <title>Oskar Przybylski - Website about me!</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script>
+       
+    </script>
+
+</head>
+<body>
+    <div class="jumbotron" style="background-color: dimgrey; background-image: none;">
+
+        <img src="~/photos/newlogo.png" class="center" style="width: 20%;" />
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/unobtrusive")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
