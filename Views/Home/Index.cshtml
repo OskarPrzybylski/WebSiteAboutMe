@@ -1,41 +1,41 @@
 <div class="jumbotron">
 
-   
-    <img src="~/photos/newlogo.png" class="center"  />
+    <a href="@Url.Action("Index","Home")">
+        <img src="~/photos/newlogo.png" class="center" />
+        </a>
+
+
+        <div class="container1 center">
+
+            <h1>Velkommen til nettsida mi!</h1>
+        </div>
 
 
 
-    <div class="container1 center">
-
-        <h1>Velkommen til nettsida mi!</h1>
-    </div>
 
 
+        <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.0); width: 100%; margin-top: 0; ">
+            <nav class="navbar navbar-default push-to-bottom">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li id="li1">
+                            @Ajax.ActionLink("o mnie ", "AboutMe", "Home",
+                        new AjaxOptions() { UpdateTargetId = "article",
+                        OnSuccess="animate"})
+                        </li>
 
 
+                        <li id="li2">
+                            @Ajax.ActionLink("projekty", "AboutProjects", "Home",
+                       new AjaxOptions() { UpdateTargetId = "article2",
+                       OnSuccess="animate1"})
+                        </li>
+                        <li>@Html.ActionLink("Mój Blog", "Index", "Blog")</li>
+                    </ul>
+                </div>
 
-    <div class="container push-to-bottom" style=" background: rgba(255, 255, 255, 0.0); width: 100%; margin-top: 0; ">
-        <nav class="navbar navbar-default push-to-bottom">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li id="li1">
-                        @Ajax.ActionLink("o mnie ", "AboutMe", "Home",
-                    new AjaxOptions() { UpdateTargetId = "article",
-                    OnSuccess="animate"})
-                    </li>
-
-
-                    <li id="li2">
-                        @Ajax.ActionLink("projekty", "AboutProjects", "Home",
-                   new AjaxOptions() { UpdateTargetId = "article2",
-                   OnSuccess="animate1"})
-                    </li>
-                    <li>@Html.ActionLink("Mój Blog", "Index", "Blog")</li>
-                </ul>
-            </div>
-
-        </nav>
-    </div>
+            </nav>
+        </div>
 </div>
 <div class="articlecontainer center" id="article" style="display: none;"></div>
 <div class="articlecontainer center" id="article2" style="display: none;"></div>
